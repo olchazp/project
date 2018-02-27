@@ -1,0 +1,23 @@
+
+{% extends "layout.html" %}
+
+{% block body %}
+<h1>Register for English level test</h1>
+<p>
+    <form action="/register" method="post">
+        <input name="name" placeholder="Name" type="text"/>
+        <select name="age">
+            <option disabled selected value="">Age</option>
+            <option value="less than 10">less than 10</option>
+            <option value="11-14">11-14</option>
+            <option value="15-18">15-18</option>
+            <option value="18-25">18-25</option>
+            <option value="25-35">25-35</option>
+            <option value="35-45">35-45</option>
+            <option value="more than 45">more than 45</option>
+        </select>
+        <input name="email" placeholder="email" type="text"/>
+        <input type="submit" value="Register"/>
+    </form>
+</p>
+{% endblock %}

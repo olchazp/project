@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+{% extends "layout.html" %}
+
+{% block body %}
+
+<p>
+    Your answers
+</p>
+<hr>
+<div>
+        {% for item in questions %}
+        {{item["category"]}}
+        <blockquote>
+            <p style=text-align:left>
+                {{item["question"]}}
+                <ol>
+                    {% for i in range(4) %}
+                    <li>{{item["answers"][i]}}</li>
+                    {% endfor %}
+                </ol>
+            </p>
+            <p>{{item["mark"]}}</p>
+        </blockquote>
+        {% endfor %}
+</div>
+<p>
+            <a href='/results'>Results</a>
+</p>
+{% endblock %}
+

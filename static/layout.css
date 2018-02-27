@@ -1,0 +1,53 @@
+body {
+    font-family: Verdana, serif;
+    background: #ededed;
+    text-align: center;
+}
+h1 {
+
+    text-align: center;
+    color: blue;
+}
+p {
+    text-align: center;
+    color: blue;
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+    border-radius: 2px;
+    box-shadow: 0 0 5px #666;
+}
+div {
+    text-align: center;
+    color: blue;
+}
+a {
+    text-align: center;
+    color: blue;
+}
+blockquote {
+    margin: 1.5em 0;
+    padding: 0.5em 15px;
+    line-height: 1.5;
+    background: #f9f9f9;
+    border-left: 2px solid #ccc;
+    text-align: center;
+    color: blue;
+}
+form {
+    text-align: center;
+    color: blue;
+    box-shadow: 0 0 5px #666;
+}
+ol {
+    text-align: center;
+    color: blue;
+}
+
+.photoparametr {
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #666;
+}

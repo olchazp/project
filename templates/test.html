@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+{% extends "layout.html" %}
+
+{% block body %}
+
+<p>
+    Answer the questions. Choose one correct answer.
+</p>
+<hr>
+<div>
+        {% for item in questions %}
+        {{item["category"]}}
+        <blockquote>
+            <p style=text-align:left>
+                {{item["question"]}}
+                <ol>
+                    {% for i in range(4) %}
+                    <li>{{item["answers"][i]}}</li>
+                    {% endfor %}
+                </ol>
+            </p>
+            <form action="/test" method="post">
+            <input name= item["answer"] placeholder="your answer" type="text"/>
+            </form>
+            <p>{{item["grade"]}}</p>
+        </blockquote>
+        {% endfor %}
+</div>
+<p>
+            <a href='/results'>Check</a>
+</p>
+{% endblock %}
+
+<script>
+    console.log(category);
+</script>
